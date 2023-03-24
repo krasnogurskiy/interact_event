@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "events_flowers", "events_flowers.csproj", "{1FC4A4E6-DBD9-4DDA-A114-0B2D062D24B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FC4A4E6-DBD9-4DDA-A114-0B2D062D24B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FC4A4E6-DBD9-4DDA-A114-0B2D062D24B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FC4A4E6-DBD9-4DDA-A114-0B2D062D24B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FC4A4E6-DBD9-4DDA-A114-0B2D062D24B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF6D9F62-6839-478C-977A-73C1C92EFA7A}
+	EndGlobalSection
+EndGlobal
