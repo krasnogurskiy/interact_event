@@ -7,7 +7,7 @@ namespace events_flowers
     {
         static void Main(string[] args)
         {
-            // Створення об'єктів
+            // створення об'єктів
             Sun sun = new Sun();
             Flower dayFlower = new Flower(FlowerType.Day, 7);
             Flower nightFlower = new Flower(FlowerType.Night, 10);
@@ -15,6 +15,7 @@ namespace events_flowers
             Bee bee = new Bee();
             Girl girl = new Girl();
 
+            // додавання підписок на події
             sun.SunRise += dayFlower.OnSunRise;
             sun.SunRise += nightFlower.OnSunRise;
             sun.SunRise += (sender, e) =>
@@ -26,10 +27,10 @@ namespace events_flowers
             sun.SunSet += nightFlower.OnSunSet;
             sun.SunSet += (sender, e) =>
             {
-                bee.VisitFlower(nightFlower);
                 girl.TakeSelfie(nightFlower);
             };
 
+            // "симуляція" 30дневного життя квіток, подій, що з ними впродовж цих днів відбуваються
             for (int i = 1; i <= 30; i++)
             {
                 Console.WriteLine($"Day {i}:");
@@ -37,6 +38,8 @@ namespace events_flowers
                 Thread.Sleep(1000);
                 sun.Set();
                 Thread.Sleep(1000);
+                dayFlower.BloomDuration--;
+                nightFlower.BloomDuration--;
                 Console.WriteLine('\n');
             }
 
